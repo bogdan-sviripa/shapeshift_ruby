@@ -16,11 +16,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install shapeshift-ruby
+    $ gem install shapeshift_ruby
 
 ## Usage
 
 ```ruby
+require 'shapeshift_ruby'
 client = ShapeShiftRuby::Client.new
 client.rate(pair: 'btc_ltc')
 => {"pair"=>"btc_ltc", "rate"=>"59.50746268"}
