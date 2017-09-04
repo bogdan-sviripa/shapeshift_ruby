@@ -12,7 +12,7 @@ module ShapeShiftRuby
     end
 
     def limit(pair:)
-      api_request(url: url("rate/#{pair}"), method: 'get')
+      api_request(url: url("limit/#{pair}"), method: 'get')
     end
 
     def market_info(pair:)
@@ -20,7 +20,7 @@ module ShapeShiftRuby
     end
 
     def recent_transactions(max:)
-      api_request(url: url("marketinfo/#{max}"), method: 'get')
+      api_request(url: url("recenttx/#{max}"), method: 'get')
     end
 
     def transaction_status(deposit_address:)
